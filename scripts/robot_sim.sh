@@ -4,7 +4,7 @@ source ~/robot_sim/devel/setup.bash
 
 # Start roscore and wait till its finished
 roscore -p 11311 &
-sleep 5
+sleep 1
  
 # Start Sim
-roslaunch robot_urdf rviz_model.launch
+roslaunch robot_urdf gazebo.launch
