@@ -26,7 +26,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Toolbars:
   toolButtonStyle: 2
 Visualization Manager:
@@ -75,19 +75,18 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_link:
-          back_left_wheel:
-            {}
-          back_right_wheel:
-            {}
-          front_left_wheel:
-            {}
-          front_right_wheel:
-            {}
-          hokuyo_link:
-            {}
         odom:
-          {}
+          base_link:
+            back_left_wheel:
+              {}
+            back_right_wheel:
+              {}
+            front_left_wheel:
+              {}
+            front_right_wheel:
+              {}
+            hokuyo_link:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -136,6 +135,36 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 999999
+      Min Color: 0; 0; 0
+      Min Intensity: 999999
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Flat Squares
+      Topic: /scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -161,25 +190,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 8.79281807
+      Distance: 11.0297108
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.236752525
-        Y: 0.0113377571
-        Z: 0.188830301
+        X: 1.33078134
+        Y: 1.42275119
+        Z: -1.09464991
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.919796646
+      Pitch: 0.819796681
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.573579133
+      Yaw: 0.363578916
     Saved: ~
 Window Geometry:
   Displays:
