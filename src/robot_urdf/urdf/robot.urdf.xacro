@@ -154,11 +154,11 @@
 
   <joint name="hokuyo_joint" type="fixed">
     <axis xyz="0 1 0" />
-    <origin xyz="0 0 0.4" rpy="0 0 0"/>
+    <origin xyz="0.41275 0 0.35" rpy="0 0 0"/>
     <parent link="base_link"/>
     <child link="hokuyo_link"/>
   </joint>
-  
+
   <link name="hokuyo_link">
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
